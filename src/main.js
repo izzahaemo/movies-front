@@ -15,7 +15,7 @@ import "./sass/app.sass";
 import "./assets/adminlte/plugins/fontawesome-free/css/all.min.css";
 import "./assets/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css";
 import "./assets/adminlte/dist/css/adminlte.min.css";
-import "./assets/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css";
+// import "./assets/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css";
 
 import "./axios";
 // import "./style.css";
@@ -24,7 +24,7 @@ import App from "./App.vue";
 const pinia = createPinia();
 
 pinia.use(({ store }) => {
-    store.router = markRaw(router);
+  store.router = markRaw(router);
 });
 
 const app = createApp(App);
